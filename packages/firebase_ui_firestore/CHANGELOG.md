@@ -1,3 +1,23 @@
+## 1.2.2
+
+ - Update a dependency to the latest release.
+
+## 1.2.1
+
+ - Update a dependency to the latest release.
+
+## 1.2.0
+
+ - **FEAT**: use aggregate query to display total rows count in DataTable ([#10113](https://github.com/firebase/flutterfire/issues/10113)). ([bf52bcca](https://github.com/firebase/flutterfire/commit/bf52bcca3eb186cc001344d2522e11245e5e660a))
+
+## 1.1.1
+
+ - Update a dependency to the latest release.
+
+## 1.1.0
+
+ - **FEAT**: Added empty builder in FirestoreListView ([#9916](https://github.com/firebase/flutterfire/issues/9916)). ([4a079d17](https://github.com/firebase/flutterfire/commit/4a079d17086e83f41c40fd1a4b79ea593043d3fc))
+
 ## 1.0.5
 
  - Update a dependency to the latest release.

@@ -1,3 +1,19 @@
+## 10.0.9
+
+ - Update a dependency to the latest release.
+
+## 10.0.8
+
+ - **REFACTOR**: remove a deprecated FallThroughError ([#10143](https://github.com/firebase/flutterfire/issues/10143)). ([8af7fb41](https://github.com/firebase/flutterfire/commit/8af7fb41b754115e30b73619f3c272d901ab776f))
+
+## 10.0.7
+
+ - Update a dependency to the latest release.
+
+## 10.0.6
+
+ - **FIX**: cache the result of event.snapshot to be able to compare the value ([#9899](https://github.com/firebase/flutterfire/issues/9899)). ([5f32b812](https://github.com/firebase/flutterfire/commit/5f32b81248906f2502b196b26be2a67456373c70))
+
 ## 10.0.5
 
  - Update a dependency to the latest release.

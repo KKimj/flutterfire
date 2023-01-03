@@ -1,3 +1,23 @@
+## 3.2.11
+
+ - Update a dependency to the latest release.
+
+## 3.2.10
+
+ - Update a dependency to the latest release.
+
+## 3.2.9
+
+ - Update a dependency to the latest release.
+
+## 3.2.8
+
+ - **FIX**: Retrieve `messageId` from `MessagePayload` received on message event for Web platform. ([#7846](https://github.com/firebase/flutterfire/issues/7846)). ([d796d33f](https://github.com/firebase/flutterfire/commit/d796d33f722d92404217f9b153c301ab4e50b370))
+
+## 3.2.7
+
+ - Update a dependency to the latest release.
+
 ## 3.2.6
 
  - Update a dependency to the latest release.
@@ -244,7 +264,7 @@
 
 ## 0.1.0-dev.4
 
- - **FIX**: null check notification jsObject (#4624).
+ - **FIX**: null check fix that could happen when using verifyPhone notification jsObject (#4624).
 
 ## 0.1.0-dev.3
 

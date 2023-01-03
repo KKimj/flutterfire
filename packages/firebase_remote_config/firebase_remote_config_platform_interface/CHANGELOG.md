@@ -1,3 +1,19 @@
+## 1.1.29
+
+ - Update a dependency to the latest release.
+
+## 1.1.28
+
+ - Update a dependency to the latest release.
+
+## 1.1.27
+
+ - Update a dependency to the latest release.
+
+## 1.1.26
+
+ - Update a dependency to the latest release.
+
 ## 1.1.25
 
  - Update a dependency to the latest release.

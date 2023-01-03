@@ -10,17 +10,21 @@ enabled in the [Firebase Console](https://console.firebase.google.com/project/_/
 Next, follow the [Setup Instructions](https://firebase.google.com/docs/auth/flutter/phone-auth) to configure Phone Authentication for your
 platforms.
 
-Configure email provider:
+Configure phone provider:
 
 ```dart
 import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_ui_auth/firebase_ui_auth.dart';
+
+// If you need to use FirebaseAuth directly, make sure to hide PhoneAuthProvider:
+// import 'package:firebase_auth/firebase_auth.dart' hide PhoneAuthProvider;
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
 
   FirebaseUIAuth.configureProviders([
-    PhoneAuthProvider(),,
+    PhoneAuthProvider(),
     // ... other providers
   ]);
 }

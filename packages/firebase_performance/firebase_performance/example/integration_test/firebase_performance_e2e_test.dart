@@ -8,14 +8,14 @@ import 'package:firebase_performance/firebase_performance.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:integration_test/integration_test.dart';
 
-import 'firebase_config.dart';
+import 'firebase_options.dart';
 
 void main() {
   IntegrationTestWidgetsFlutterBinding.ensureInitialized();
 
   setUpAll(() async {
     await Firebase.initializeApp(
-      options: DefaultFirebaseConfig.platformOptions,
+      options: DefaultFirebaseOptions.currentPlatform,
     );
   });
 
@@ -55,6 +55,17 @@ void main() {
 
     test('start & stop trace', () async {
       await testTrace.start();
+      await testTrace.stop();
+    });
+
+    test("starting Trace twice shouldn't throw an error", () async {
+      await testTrace.start();
+      await testTrace.start();
+    });
+
+    test("stopping Trace twice shouldn't throw an error", () async {
+      await testTrace.start();
+      await testTrace.stop();
       await testTrace.stop();
     });
 
@@ -201,6 +212,17 @@ void main() {
       test('set response content type correctly', () {
         testHttpMetric.responseContentType = 'content';
         expect(testHttpMetric.responseContentType, equals('content'));
+      });
+
+      test("starting HttpMetric twice shouldn't throw an error", () async {
+        await testHttpMetric.start();
+        await testHttpMetric.start();
+      });
+
+      test("stopping HttpMetric twice shouldn't throw an error", () async {
+        await testHttpMetric.start();
+        await testHttpMetric.stop();
+        await testHttpMetric.stop();
       });
     },
     skip: kIsWeb,

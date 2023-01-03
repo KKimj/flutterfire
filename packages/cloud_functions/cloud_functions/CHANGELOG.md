@@ -1,3 +1,15 @@
+## 4.0.7
+
+ - Update a dependency to the latest release.
+
+## 4.0.6
+
+ - **REFACTOR**: remove deprecated Task APIs ([#10076](https://github.com/firebase/flutterfire/issues/10076)). ([951bc77b](https://github.com/firebase/flutterfire/commit/951bc77be8e2177435c0c94cc3667b24064dbdc5))
+
+## 4.0.5
+
+ - Update a dependency to the latest release.
+
 ## 4.0.4
 
  - Update a dependency to the latest release.
