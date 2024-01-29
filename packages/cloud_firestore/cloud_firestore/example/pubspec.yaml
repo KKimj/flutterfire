@@ -6,7 +6,11 @@ environment:
 
 dependencies:
   cloud_firestore: ^4.14.0
-  firebase_core: ^2.24.2
+  firebase_core:
+    git:
+      url: https://github.com/KKimj/flutterfire.git
+      ref: upgradejs
+      path: packages/firebase_core/firebase_core/
   flutter:
     sdk: flutter
   http: ^1.0.0

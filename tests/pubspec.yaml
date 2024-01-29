@@ -24,9 +24,17 @@ dependencies:
   firebase_auth: ^4.16.0
   firebase_auth_platform_interface: ^7.0.9
   firebase_auth_web: ^5.8.13
-  firebase_core: ^2.24.2
+  firebase_core:
+    git:
+      url: https://github.com/KKimj/flutterfire.git
+      ref: upgradejs
+      path: packages/firebase_core/firebase_core/
   firebase_core_platform_interface: ^5.0.0
-  firebase_core_web: ^2.10.0
+  firebase_core_web:
+    git:
+      url: https://github.com/KKimj/flutterfire.git
+      ref: upgradejs
+      path: packages/firebase_core/firebase_core_web/^2.10.0
   firebase_crashlytics: ^3.4.9
   firebase_crashlytics_platform_interface: ^3.6.16
   firebase_database: ^10.4.0

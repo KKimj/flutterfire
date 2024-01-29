@@ -16,7 +16,11 @@ environment:
 dependencies:
   firebase_auth_platform_interface: ^7.0.9
   firebase_auth_web: ^5.8.13
-  firebase_core: ^2.24.2
+  firebase_core:
+    git:
+      url: https://github.com/KKimj/flutterfire.git
+      ref: upgradejs
+      path: packages/firebase_core/firebase_core/
   firebase_core_platform_interface: ^5.0.0
   flutter:
     sdk: flutter
@@ -43,4 +47,3 @@ flutter:
         default_package: firebase_auth_web
       windows:
         pluginClass: FirebaseAuthPluginCApi
-
